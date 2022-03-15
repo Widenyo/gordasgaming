@@ -11,8 +11,13 @@ body{
     border-radius: 25px;
 }
 
-.container > h2{
+.container > h2 > a{
     margin: 20px;
+    text-decoration: none;
+}
+
+.container > h2 > a:visited{
+    color:inherit;
 }
 
 .container > p{
