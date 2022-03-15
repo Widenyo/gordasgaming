@@ -7,9 +7,37 @@ body{
 }
 
 .container{
-    display: flex;
-    flex-direction: column;
     border-style: dotted;
+    height: 900px;
+    border-radius: 25px;
+}
+
+.container > h2{
+    margin: 20px;
+}
+
+.container > p{
+    margin: 10px;
+    display: inline-block;
+}
+
+.container > img{
+    width: 200px;
+    height: 300px;
+    margin: 50px;
+    float: right
+}
+
+#foto:hover{
+    transform: scaleX(-1);
+}
+
+#foto{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 .comentarios{
