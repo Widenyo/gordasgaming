@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border-style: dotted;
+}
+
+.comentarios{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    border-style: dotted;
+
+}
