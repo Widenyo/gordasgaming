@@ -1,14 +1,13 @@
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
+    background-image: url(imagenes/background/background.gif);
     color: red;
 }
 
 .container{
     border-style: dotted;
     border-radius: 25px;
+    margin: 1em;
+    background: rgba(0,0,0,.8);
 }
 
 .container > *{
