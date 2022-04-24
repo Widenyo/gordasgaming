@@ -3,6 +3,14 @@ const miNinaBonita = ["MI NIÑA BONITA MI DULCE PRINCESA", "ME SIENTO EN LAS NUB
 const vanillaFotos = document.getElementById("vanillaFotos")
 const randoms = document.getElementById("randoms")
 const limpiar = document.getElementById("limpiar")
+const backgroundPicker = document.getElementById("backgroundpicker")
+const colorPicker = document.getElementById("colorpicker")
+let backgroundColor = "#000000"
+let color = "red"
+const dmx = document.getElementById("dmx")
+const divs = document.querySelectorAll('div')
+let width = 250
+let height = 250
 
 fetch("https://criptoya.com/api/dolar")
 .then(response => response.json())
@@ -14,6 +22,30 @@ fetch("https://criptoya.com/api/dolar")
 limpiar.addEventListener('click', () =>{
     randoms.innerHTML = ""
 })
+
+backgroundPicker.addEventListener('change', (e) =>{
+    backgroundColor = e.target.value
+})
+
+colorPicker.addEventListener('change', (e) =>{
+    color = e.target.value
+})
+
+dmx.addEventListener('click', ()=>{
+    width /= 2
+    height /= 2
+    dmx.style.width = width + "px"
+    dmx.style.height = height + "px"
+})
+
+for(let i = 0; i < divs.length;i++){
+    divs[i].addEventListener('click', () =>{
+        divs[i].style.backgroundColor = backgroundColor
+        divs[i].style.color = color
+        console.log(divs[i].style.backgroundColor)
+    })
+}
+
 
 
 function fotos(usuarioFotos, personaje){
