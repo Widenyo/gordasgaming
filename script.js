@@ -5,7 +5,7 @@ const randoms = document.getElementById("randoms")
 const limpiar = document.getElementById("limpiar")
 const backgroundPicker = document.getElementById("backgroundpicker")
 const colorPicker = document.getElementById("colorpicker")
-let backgroundColor = "#000000"
+let backgroundColor = "rgba(0,0,0, 0.8)"
 let color = "red"
 const dmx = document.getElementById("dmx")
 const divs = document.querySelectorAll('div')
@@ -24,7 +24,7 @@ limpiar.addEventListener('click', () =>{
 })
 
 backgroundPicker.addEventListener('change', (e) =>{
-    backgroundColor = e.target.value
+    backgroundColor = e.target.value + "CC"
 })
 
 colorPicker.addEventListener('change', (e) =>{
@@ -42,7 +42,6 @@ for(let i = 0; i < divs.length;i++){
     divs[i].addEventListener('click', () =>{
         divs[i].style.backgroundColor = backgroundColor
         divs[i].style.color = color
-        console.log(divs[i].style.backgroundColor)
     })
 }
 

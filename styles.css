@@ -1,3 +1,5 @@
+
+
 body{
     background-image: url(imagenes/background/background.gif);
     color: red;
@@ -7,8 +9,7 @@ body{
     border-style: dotted;
     border-radius: 25px;
     margin: 1em;
-    background: rgba(0,0,0);
-    opacity: 0.8
+    background: rgba(0,0,0,.8);
 }
 
 .container > *{
