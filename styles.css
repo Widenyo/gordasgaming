@@ -1,8 +1,40 @@
 
 
 body{
-    background-image: url(imagenes/background/background.gif);
+    background-image: url(imagenes/background/Hinhnenso1.com-hinh-dong-.062.gif);
     color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+header{
+    margin: auto;
+    width: 50%;
+    background-color: black;
+}
+
+ul > a > li{
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+
+
+
+h1{
+    font-family: Comic Sans MS;
+}
+
+ul > a{
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+a:visited{
+    color: inherit;
 }
 
 .container{
@@ -13,6 +45,10 @@ body{
 }
 
 .container > *{
+    margin-left: 15px;
+}
+
+.autismo > *{
     margin-left: 15px;
 }
 
@@ -33,8 +69,8 @@ h3{
 }
 
 .icono{
-    width: 25px;
-    height: 25px;
+    width: 16px;
+    height: 16px;
     display: inline-block;
 }
 
@@ -49,6 +85,13 @@ h3{
     height: 300px;
     margin: 50px;
     float: right
+}
+
+button{
+    background-color: black;
+    color: red;
+    border-radius: 25px;
+    font-family: Impact
 }
 
 #foto:hover{
@@ -74,4 +117,11 @@ h3{
     position:fixed;
     bottom: 0;
     right: 0;
+}
+
+.gitpfp{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 25px;
 }
