@@ -119,6 +119,10 @@ button{
     right: 0;
 }
 
+#dmx:hover{
+    filter: brightness(50%);
+}
+
 .gitpfp{
     width: 250px;
     height: 250px;
